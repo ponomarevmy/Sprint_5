@@ -15,8 +15,8 @@
 		</tr>
 	</tbody>
 </table>
-<br>
-Вход - `test_authorization.py`
+
+Вход -  `test_authorization.py`
 <table>
 	<tbody>
 		<tr>
@@ -37,7 +37,7 @@
 		</tr>
 	</tbody>
 </table>
-<br>
+
 Переход в личный кабинет - `test_go_to_personal_account.py`
 <table>
 	<tbody>
@@ -47,7 +47,7 @@
 		</tr>
 	</tbody>
 </table>
-<br>
+
 Переход из личного кабинета в конструктор - `test_go_to_constructor_from_personal_account.py`
 <table>
 	<tbody>
@@ -57,7 +57,7 @@
 		</tr>
 	</tbody>
 </table>
-<br>
+
 Выход из аккаунта - `test_logout.py`
 <table>
 	<tbody>
@@ -67,7 +67,7 @@
 		</tr>
 	</tbody>
 </table>
-<br>
+
 Раздел «Конструктор» - `test_section_constructor.py`
 <table>
 	<tbody>
