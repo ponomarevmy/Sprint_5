@@ -17,6 +17,6 @@ class TestAccount:
         driver.find_element(*Locators.BTN_ENTER).click()
         WebDriverWait(driver, 5).until(EC.element_to_be_clickable(Locators.BTN_PERSONAL_ACCOUNT))
         driver.find_element(*Locators.BTN_PERSONAL_ACCOUNT).click()
-        time.sleep(3)
+        WebDriverWait(driver, 5).until(EC.element_to_be_clickable(Locators.BTN_EXIT_PERSONAL_ACCOUNT))
         current_url = driver.current_url
         assert current_url == urls.Urls.url_personal

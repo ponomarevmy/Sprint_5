@@ -53,20 +53,23 @@ class Locators:
     # Кнопка для переключения в раздел "Булки"
     BTN_BUL = By.XPATH, "//span[text()='Булки']/parent::div"
 
-    # Скрол раздела "Булки"
-    TXT_BUL = By.XPATH, "//h2[text()='Булки']"
+    # Выбран раздел "Булки"
+    TXT_BUL = By.XPATH, ("//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 "
+                         "noselect']//span[text()='Булки']")
 
     # Кнопка для переход в раздел "Соусы"
     BTN_SOUSES = By.XPATH, "//span[text()='Соусы']/parent::div"
 
-    # Скрол раздела "Соусы"
-    TXT_SOUSES = By.XPATH, "//h2[text()='Соусы']"
+    # Выбран раздел "Соусы"
+    TXT_SOUSES = By.XPATH, ("//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 "
+                            "noselect']//span[text()='Соусы']")
 
     # Кнопка для переход в раздел "Начини"
     BTN_STAFFING = By.XPATH, "//span[text()='Начинки']/parent::div"
 
-    # Скрол раздела "Начинки"
-    TXT_STAFFING = By.XPATH, "//h2[text()='Начинки']"
+    # Выбран рздел "Начинки"
+    TXT_STAFFING = By.XPATH, ("//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 "
+                              "noselect']//span[text()='Начинки']")
 
     # Кнопка "Оформить заказ" (После авторизции)
     BTN_ORDER = By.XPATH, "//button[contains(@class, 'button_button_size_large')]"

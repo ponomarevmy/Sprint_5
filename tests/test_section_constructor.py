@@ -5,17 +5,12 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class TestConstructorSection:
     def test_constructor_section_burgers(self, driver):
-        WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable(Locators.BTN_PERSONAL_ACCOUNT))
+        WebDriverWait(driver, 5).until(EC.element_to_be_clickable(Locators.BTN_PERSONAL_ACCOUNT))
         driver.find_element(*Locators.BTN_PERSONAL_ACCOUNT).click()
-        WebDriverWait(driver, 5).until(
-            EC.visibility_of_element_located(
-                Locators.BTN_TRANSIT_TO_CONSTRUCTOR))
+        WebDriverWait(driver, 5).until(EC.visibility_of_element_located(Locators.BTN_TRANSIT_TO_CONSTRUCTOR))
         driver.find_element(*Locators.BTN_TRANSIT_TO_CONSTRUCTOR).click()
-        WebDriverWait(driver, 5).until(
-            EC.visibility_of_element_located(Locators.BTN_BUL))
-        WebDriverWait(driver, 5).until(
-            EC.visibility_of_element_located(Locators.TXT_BUL))
+        WebDriverWait(driver, 5).until(EC.visibility_of_element_located(Locators.BTN_BUL))
+        WebDriverWait(driver, 5).until(EC.visibility_of_element_located(Locators.TXT_BUL))
         element = driver.find_element(*Locators.TXT_BUL)
         driver.execute_script("arguments[0].scrollIntoView();", element)
         btn_is = driver.find_element(*Locators.TXT_BUL)

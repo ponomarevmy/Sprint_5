@@ -23,6 +23,5 @@ class TestGoToConstructor:
         driver.find_element(*Locators.BTN_PERSONAL_ACCOUNT).click()
         WebDriverWait(driver, 5).until(EC.element_to_be_clickable(Locators.BTN_TRANSIT_TO_CONSTRUCTOR))
         driver.find_element(*Locators.BTN_TRANSIT_TO_CONSTRUCTOR).click()
-        time.sleep(2)
         current_url = driver.current_url
         assert current_url == urls.Urls.url_main
